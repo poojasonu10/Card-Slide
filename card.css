@@ -1,0 +1,51 @@
+body {
+    background-color: #ddd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.box-content {
+    height: 300px;
+    width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+.box-front,
+.box-back {
+    position: absolute;
+   height: 300px;
+   width: 300px;
+   padding: 30px;
+   color: #ddd;
+}
+.box-back p {
+    color: #ddd;
+    text-align: justify;
+}
+h2 {
+    text-transform: uppercase;
+}
+.box-front a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bold;
+}
+.box-front {
+    background-color: #08081b;
+    text-align: center;
+    font-size: 2rem;
+}
+.box-back {
+    background-color: #1f2928;
+    transform: rotateY(90deg);
+}
+.box:hover .box-content {
+    transform: rotateY(270deg);
+}
+ 
